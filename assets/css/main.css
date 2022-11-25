@@ -5,10 +5,11 @@
 /* VARIABLES */
 :root {
   --BG-CLR-PR: #222;
-  --BG-CLR-SC: #333;
+  --BG-CLR-SC: #333;  
 
   --BG-CALC: #444;
   --BG-ORANGERED: #ff641c;
+  --BG-ORANGERED-SC: #db5618;
 
   --FT-CLR: #f5f5f5;
 }
@@ -120,16 +121,27 @@ body {
   
   cursor: pointer;
   border-radius: 0.2rem;
+
+  transition: 0.2s ease-in-out;
   
   box-shadow: var(--BG-ORANGERED) 0 0.5px;
 
   background: var(--BG-CLR-PR);
 }
 
+.key:hover, .key:active, .key:focus {
+  background: var(--BG-CLR-SC);
+}
+
 .key:active {
   box-shadow: none;
   transform: translateY(5%);
 } 
+
+.clicked {
+  box-shadow: none;
+  transform: translateY(5%);
+}
 
 .clear {
   color: var(--BG-ORANGERED);
@@ -138,6 +150,14 @@ body {
 .result {
   width: 48%;
   background: var(--BG-ORANGERED);
+}
+
+.clear:hover, .clear:focus, .clear:active {
+  color: var(--BG-ORANGERED-SC);
+}
+
+.result:hover, .result:focus, .result:active {
+  background: var(--BG-ORANGERED-SC);
 }
 
 /* RESPONSIVE DESIGN */
