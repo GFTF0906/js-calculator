@@ -1,2 +1,3 @@
-# js-calculator
+# Eureka! Calculator
+
 Calculator made with HTML, CSS and JavaScript.
